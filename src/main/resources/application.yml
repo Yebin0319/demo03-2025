@@ -1,1 +1,8 @@
-spring.application.name=demo03
+server:
+  port: 8070
+spring:
+  profiles:
+    active: dev
+custom:
+  site:
+    name: "My Site"
