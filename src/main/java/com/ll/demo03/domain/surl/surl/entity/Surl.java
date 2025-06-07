@@ -15,6 +15,7 @@ import static lombok.AccessLevel.PROTECTED;
 public class Surl extends BaseTime {
     private String body;
     private String url;
+    private long id;
 
     @Setter(AccessLevel.NONE)
     private long count;
