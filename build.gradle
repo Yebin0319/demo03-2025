@@ -29,6 +29,11 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	implementation 'org.springframework.boot: spring-boot-starter-actuator'
+
+	implementation 'org.springframework.book:spring-boot-starter-data-radis'
+	implementation 'org.springframework.session:spring-boot-starter-data-radis'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
