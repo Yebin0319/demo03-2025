@@ -1,4 +1,4 @@
-package com.ll.demo03.domain.surl.surl.entity;
+package com.ll.demo03.domain.member.member.entity;
 
 import com.ll.demo03.global.jpa.entity.BaseTime;
 import jakarta.persistence.Entity;
@@ -12,14 +12,9 @@ import static lombok.AccessLevel.PROTECTED;
 @Setter
 @AllArgsConstructor(access = PROTECTED)
 @NoArgsConstructor(access = PROTECTED)
-public class Surl extends BaseTime {
-    private String body;
-    private String url;
+public class Member extends BaseTime {
+    private String username;
+    private String password;
+    private String nickname;
 
-    @Setter(AccessLevel.NONE)
-    private long count;
-
-    public void increaseCount() {
-        count++;
-    }
 }
