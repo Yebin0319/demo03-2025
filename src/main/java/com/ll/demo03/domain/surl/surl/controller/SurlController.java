@@ -21,6 +21,8 @@ import java.util.List;
 public class SurlController {
     private final SurlService surlService;
     private final com.ll.demo03.global.rq.Rq rq;
+    private static int surlsLastId = 0;
+    private static List<Surl> surls = new ArrayList<>();
 
     @GetMapping("/all")
     @ResponseBody
@@ -35,7 +37,7 @@ public class SurlController {
 
         log.debug("log test");
 
-        return surlService.add(member, body, url);
+        return surlService.add(member, body, url).getData();
     }
 
     @GetMapping("/s/{body}/**")
